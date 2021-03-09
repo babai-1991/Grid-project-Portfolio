@@ -174,6 +174,43 @@ Navbar
 ===============
 */
 
+.nav-links {
+	/* hide on smaller screen */
+	display: none;
+}
+
+.nav {
+	height: 5rem;
+	padding: 1rem;
+	/* placing .nav-center and .nav-links in a center(align them vertically in the center) */
+	display: grid;
+	align-items: center;
+	transition: var(--transition);
+}
+
+.nav-center {
+	width: 100%;
+	max-width: 1170px;
+	margin: 0 auto;
+}
+
+.nav-header {
+	/* align logo and toggle button */
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	align-items: center;
+}
+
+.nav-btn {
+	background: transparent;
+	border-color: transparent;
+	color: var(--clr-primary-5);
+	font-size: 2rem;
+	cursor: pointer;
+	/* place at the left side. 
+  justify-self will target particular item*/
+	justify-self: flex-end;
+}
 /*
 =============== 
 Sidebar
