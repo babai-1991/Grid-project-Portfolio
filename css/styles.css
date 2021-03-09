@@ -211,6 +211,52 @@ Navbar
   justify-self will target particular item*/
 	justify-self: flex-end;
 }
+
+@media screen and (min-width: 768px) {
+	.nav {
+		background: var(--clr-primary-10);
+	}
+	/* on bigger screen hide toggle button */
+	.nav-btn {
+		display: none;
+	}
+
+	/* show links */
+	.nav-links {
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		justify-items: center;
+		column-gap: 2rem;
+		justify-self: flex-end;
+	}
+	.nav-links a {
+		text-transform: capitalize;
+		color: var(--clr-grey-1);
+		font-weight: bold;
+		letter-spacing: var(--spacing);
+		transition: var(--transition);
+	}
+	.nav-links a:hover {
+		color: var(--clr-primary-5);
+	}
+	/* place logo and link side by side */
+	.nav-center {
+		display: grid;
+		/* here .nav-header will turn into first column and 
+	.nav-links will turn into second column 
+
+		so auto will be assign to first column i.e to .nav-header and 1fr will be assigned to 
+	.nav-links 
+	
+	auto means take only that much space , specified by designer
+
+	1fr means take all the remaining spaces.
+	
+	*/
+		grid-template-columns: auto 1fr;
+		align-items: center;
+	}
+}
 /*
 =============== 
 Sidebar
