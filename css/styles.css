@@ -262,7 +262,82 @@ Navbar
 Sidebar
 ===============
 */
+.sidebar {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: var(--clr-grey-10);
+	/* for safety reason, z-index */
+	z-index: 4;
 
+	/* centering content:
+	note in html I have a div with no class , 
+	which is the direct child so it will be easy to position */
+	display: grid;
+	/* align-content: center;
+	justify-content: center; */
+
+	/* You could use align-content and justify-content or you can use this new property */
+	place-items: center;
+	transition: var(--transition);
+
+	/* hide whole sidebar */
+	/* transform: translateX(-100%); */
+}
+
+.sidebar-links {
+	text-align: center;
+}
+
+.sidebar-links a {
+	font-size: 2rem;
+	text-transform: capitalize;
+	transition: var(--transition);
+	color: var(--clr-grey-5);
+	letter-spacing: var(--spacing);
+	/* for margin */
+	display: inline-block;
+	margin-bottom: 1.5rem;
+}
+.sidebar-links a:hover {
+	color: var(--clr-primary-5);
+}
+
+.social-icons {
+	display: grid;
+	margin-top: 3rem;
+	width: 20rem;
+	grid-template-columns: repeat(6, 1rem);
+	/* justify-items: center; */
+	place-items: center;
+	column-gap: 3rem;
+}
+.social-icon {
+	font-size: 2rem;
+	color: var(--clr-grey-1);
+	transition: var(--transition);
+}
+.social-icon:hover {
+	color: var(--clr-primary-5);
+}
+
+.close-btn {
+	position: absolute;
+	top: 1rem;
+	right: 1rem;
+	font-size: 3rem;
+	background: transparent;
+	border-color: transparent;
+	cursor: pointer;
+	transition: var(--transition);
+	color: #bb2525;
+}
+.close-btn:hover {
+	transform: rotate(180deg);
+	color: #e66b6b;
+}
 /*
 =============== 
 Hero
