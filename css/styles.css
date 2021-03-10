@@ -411,10 +411,12 @@ Hero
 		position: relative;
 	}
 	.hero-center {
+		/* already mention grid in upper */
 		grid-template-columns: repeat(2, 1fr);
 	}
 
-	.hero-img::before {
+	.hero-img::before,
+	.about-img::before {
 		content: "";
 		/* for making a border around image */
 		position: absolute;
@@ -457,6 +459,26 @@ About
 }
 .about-img {
 	justify-self: center;
+}
+
+/* bigger screen */
+@media screen and (min-width: 992px) {
+	/* 2 column layout */
+	.about-center {
+		/* already mention grid in upper */
+		grid-template-columns: 1fr 1fr;
+	}
+	.about-img {
+		/* for making a border around image */
+		position: relative;
+	}
+	.about-img::before {
+		top: -2;
+		right: 2rem;
+	}
+	.about-info {
+		place-self: center;
+	}
 }
 /*
 =============== 
