@@ -700,6 +700,7 @@ and then positioned that div absolute and copy below css there. But I am using :
 	background: var(--clr-primary-10);
 	padding: 3rem 5rem 12rem 5rem;
 	text-align: center;
+	clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 80% 95%, 50% 75%, 0% 75%);
 }
 .video-banner .section-title {
 	margin-bottom: 2rem;
@@ -711,4 +712,13 @@ and then positioned that div absolute and copy below css there. But I am using :
 .connect {
 	display: grid;
 	place-items: center;
+}
+
+/* clip part */
+.connect {
+	-webkit-clip-path: polygon(50% 0%, 100% 12%, 100% 88%, 50% 100%, 0 91%, 0 12%);
+	clip-path: polygon(50% 0%, 100% 12%, 100% 88%, 50% 100%, 0 91%, 0 12%);
+}
+.video-banner {
+	clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 80% 95%, 50% 75%, 0% 75%);
 }
