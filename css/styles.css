@@ -611,6 +611,21 @@ Projects
 	opacity: 1;
 	transform: scale(0.8);
 }
+
+@media screen and (min-width: 676px) {
+	/* 2 column layout */
+	.projects-center {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		column-gap: 2rem;
+	}
+}
+@media screen and (min-width: 992px) {
+	/* 3 column layout */
+	.projects-center {
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+}
 /*
 =============== 
 Connect
