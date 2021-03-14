@@ -954,3 +954,30 @@ timeline
 	grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
 	gap: 3rem 1rem;
 }
+
+/*=============================================
+=            footer            =
+=============================================*/
+.footer {
+	padding-bottom: 2rem;
+	background: #222;
+	display: grid;
+	place-items: center;
+}
+
+.footer .social-icons {
+	margin-bottom: 2rem;
+}
+
+.footer .social-icon {
+	color: var(--clr-primary-5);
+}
+
+.footer .social-icon:hover {
+	color: var(--clr-primary-10);
+}
+
+.footer p {
+	text-transform: capitalize;
+	font-size: 1.25rem;
+}
