@@ -981,3 +981,28 @@ timeline
 	text-transform: capitalize;
 	font-size: 1.25rem;
 }
+
+/*=============================================
+=            about and contact page        =
+=============================================*/
+
+.single-page {
+	background: var(--clr-primary-10);
+	min-height: calc(100vh - 5rem - 198px);
+}
+
+.page-info {
+	display: grid;
+	max-width: 700px;
+	place-items: center;
+}
+
+.page-info a {
+	text-transform: uppercase;
+	color: var(--clr-primary-5);
+	transition: var(--transition);
+}
+
+.page-info a:hover {
+	color: var(--clr-primary-1);
+}
